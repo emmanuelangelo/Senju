@@ -11,14 +11,14 @@ engine = pyttsx3.init()
 
 voice = engine.getProperty('voices')
 
-engine.setProperty('voice', voice[1].id)
+engine.setProperty('voice', voice[0].id)
 
 r = sr.Recognizer()
 mic = sr.Microphone(device_index=1)
 
 conversation = ""
-user_name = "You"
-bot_name = "Lizz"
+user_name = "Maxwell"
+bot_name = "SENJU"
 
 while True:
     with mic as source:
